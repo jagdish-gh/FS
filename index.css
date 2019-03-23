@@ -1,0 +1,19 @@
+.navbar {
+    margin-bottom: 0;
+}
+.navbar.navbar-inverse {
+  border: none;
+}
+.navbar .navbar-brand {
+  padding-top: 0px;
+}
+.navbar .navbar-brand img {
+  height: 50px;
+}
+.jumbotron{
+	/*color:#ffffff; */
+	background-color:rgba(242, 242, 242,0.8);
+}
+#new{background-color:#9e8b8e;padding:3%;}
+
+#new2{background-color:#9e8b8e;padding:3%;}

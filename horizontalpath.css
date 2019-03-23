@@ -1,0 +1,33 @@
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu div {
+  display: inline-block;
+  padding:14px;
+
+}
+
+div.scrollmenu a{
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: coral;
+}
+.mystyle {
+  background-color: coral;
+  color: white;
+  box-sizing: border-box;
+}
+.mytab{
+  background-color: green;
+  color: white;
+  box-sizing: border-box;
+
+}
