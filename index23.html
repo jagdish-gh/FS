@@ -1,0 +1,447 @@
+
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link  rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index.css"></link>
+  <link rel="stylesheet" href="horizontalpath.css"></link>
+  <link rel="stylesheet" href="Login.css"></link>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container">
+	    <div class="navbar-header">
+	     <a class="navbar-brand" href="#">
+	    <img src="https://uploads.codesandbox.io/uploads/user/93c6b64a-5267-46df-8586-6eff1325addd/wjwI-Logo.png"  alt="">
+		</a>
+	    </div>
+
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#" onclick="document.getElementById('id01').style.display='block'" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      <li><a href="#" onclick="document.getElementById('id01').style.display='block'" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
+	</nav>
+  
+	<div class="container-fluid" id="new">
+	  <div class="jumbotron">     
+	    <!--<p>Select Your Fumo</p>-->
+		<form>
+	    <div class="form-group">
+	      <div class="row">
+
+	      <ul class="nav nav-tabs">
+		    <li class="active"><a data-toggle="tab" href="#vert1" onclick="to_reset()">Thane</a></li>
+		    <li><a data-toggle="tab" href="#vert2" onclick="to_reset()">Airoli Circle</a></li>
+		    <li><a data-toggle="tab" href="#vert3" onclick="to_reset()">Station</a></li>
+		    <li><a data-toggle="tab" href="#vert4" onclick="to_reset()">Powai</a></li>
+		  </ul>
+
+		  	<div class="tab-content">
+
+			    <div id="vert1" class="tab-pane fade in active">
+			    	<h3>Route for Thane</h3>
+			   		<div class="col-sm-6">
+					  <div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="sel1">Select Your Starting Point:</label>
+							</div>
+							<div class="panel-body">
+							  <select class="form-control" id="sela1" onchange="myValue('voila')">
+								<option  selected disabled value='0'>From</option>
+								<option value='1'>Capgemini</option>
+								<option value='2'>Ganpati Pada</option>
+								<option value='3'>Vitawa Naka</option>
+								<option value='4'>Vitava Gaon</option>
+								<option value='5'>Kalwa Depot</option>
+								<option value='6'>Kalwa Naka</option>
+								<option value='7'>Court Naka</option>
+								<option value='8'>Mahagiri Koliwada</option>
+								<option value='9'>Dadoji Stadium</option>
+								<option value='10'>Chendani Kohliwada</option>
+								<option value='11'>Thane Station</option>
+							  </select>
+							</div>
+					  </div>
+				    </div>
+
+		 			<div class="col-sm-6">
+		      			<div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="sel1">Select Your Final Destination:</label>
+							</div>
+							<div class="panel-body">
+							  <select class="form-control" id="sela2" onchange="myValue('voila')">
+								<option  selected disabled>To</option>
+								<option>Thane Station</option>
+								<option>Chendani Kohliwada</option>
+								<option>Dadoji Stadium</option>
+								<option>Mahagiri Koliwada</option>
+								<option>Court Naka</option>
+								<option>Kalwa Naka</option>
+								<option>Kalwa Depot</option>
+								<option>Vitava Gaon</option>
+								<option>Vitawa Naka</option>
+								<option>Ganpati Pada</option>
+								<option>Capgemini</option>
+							  </select>
+							</div>
+			  			</div>
+		  			</div> 
+			    </div>
+
+			    <div id="vert2" class="tab-pane fade ">
+			    	<h3>Route for Airoli Circle</h3>
+			   		<div class="col-sm-6">
+					  <div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="sel1">Select Your Starting Point:</label>
+							</div>
+							<div class="panel-body">
+							  <select class="form-control" id="selb1" onchange="myValue('voila')">
+								<option  selected disabled>From</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</div>
+					  </div>
+				    </div>
+
+		 			<div class="col-sm-6">
+		      			<div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="sel1">Select Your Final Destination:</label>
+							</div>
+							<div class="panel-body">
+							  <select class="form-control" id="selb2" onchange="myValue('voila')">
+								<option  selected disabled>To</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</div>
+			  			</div>
+		  			</div> 
+			    </div>
+
+			    <div id="vert3" class="tab-pane fade ">
+			    	<h3>Route for Station</h3>
+			   		<div class="col-sm-6">
+					  <div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="sel1">Select Your Starting Point:</label>
+							</div>
+							<div class="panel-body">
+							  <select class="form-control" id="selc1" onchange="myValue()">
+								<option  selected disabled>From</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</div>
+					  </div>
+				    </div>
+
+		 			<div class="col-sm-6">
+		      			<div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="sel1">Select Your Final Destination:</label>
+							</div>
+							<div class="panel-body">
+							  <select class="form-control" id="selc2" onchange="myValue()">
+								<option  selected disabled>To</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</div>
+			  			</div>
+		  			</div> 
+			    </div>
+
+			    <div id="vert4" class="tab-pane fade ">
+			    	<h3>Route for Powai</h3>
+			   		<div class="col-sm-6">
+					  <div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="sel1">Select Your Starting Point:</label>
+							</div>
+							<div class="panel-body">
+							  <select class="form-control" id="seld1" onchange="myValue()">
+								<option  selected disabled>From</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</div>
+					  </div>
+				    </div>
+
+		 			<div class="col-sm-6">
+		      			<div class="panel panel-default">
+							<div class="panel-heading">
+								<label for="sel1">Select Your Final Destination:</label>
+							</div>
+							<div class="panel-body">
+							  <select class="form-control" id="seld2" onchange="myValue()">
+								<option  selected disabled>To</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							  </select>
+							</div>
+			  			</div>
+		  			</div> 
+			    </div>
+
+		  	</div> <!--tab-content div -->
+	    </div>
+	    
+		<button type="button" class="btn btn-primary btn-block" id="voila">Let's Go</button>
+		</div>
+		</form>
+	  </div>
+	</div>
+
+	<div class="container-fluid" id="new2">
+		<div class="jumbotron"> 
+		 <ul class="nav nav-tabs">
+		    <li class="active"><a data-toggle="tab" href="#home" onclick="to_reset()">Thane</a></li>
+		    <li><a data-toggle="tab" href="#menu1" onclick="to_reset()">Airoli Circle</a></li>
+		    <li><a data-toggle="tab" href="#menu2" onclick="to_reset()">Station</a></li>
+		    <li><a data-toggle="tab" href="#menu3" onclick="to_reset()">Powai</a></li>
+		  </ul>
+
+		  	<div class="tab-content">
+
+			    <div id="home" class="tab-pane fade in active">
+			      <h3>Route for Thane Line</h3>
+			      <p>
+					<div class="scrollmenu">
+					  <div id="r1"><a href="#home" onclick="myFunction('r1')">Home</a></div>
+					  <div id="r2"><a href="#news" onclick="myFunction('r2')">News</a></div>
+					  <div id="r3"><a href="#contact" onclick="myFunction('r3')">Contact</a></div>
+					  <div id="r4"><a href="#about" onclick="myFunction('r4')">About</a></div>
+					  <div id="r5"><a href="#support" onclick="myFunction('r5')">Support</a></div>
+					  <div id="r6"><a href="#blog" onclick="myFunction('r6')">Blog</a></div>
+					  <div id="r7"><a href="#tools" onclick="myFunction('r7')">Tools</a> </div>
+					  <div id="r8"><a href="#base" onclick="myFunction('r8')">Base</a></div>
+					  <div id="r9"><a href="#custom" onclick="myFunction('r9')">Custom</a></div>
+					</div> 
+				  </p>
+			    </div>
+
+			    <div id="menu1" class="tab-pane fade">
+			      <h3>Route for Airoli Circle</h3>
+			      <p>
+					<div class="scrollmenu">
+					  <div id="a1"><a href="#home" onclick="myFunction('a1')">Home</a></div>
+					  <div id="a2"><a href="#news" onclick="myFunction('a2')">News</a></div>
+					  <div id="a3"><a href="#contact" onclick="myFunction('a3')">Contact</a></div>
+					  <div id="a4"><a href="#about" onclick="myFunction('a4')">About</a></div>
+					  <div id="a5"><a href="#support" onclick="myFunction('a5')">Support</a></div>
+					  <div id="a6"><a href="#blog" onclick="myFunction('a6')">Blog</a></div>
+					  <div id="a7"><a href="#tools" onclick="myFunction('a7')">Tools</a> </div>
+					  <div id="a8"><a href="#base" onclick="myFunction('a8')">Base</a></div>
+					  <div id="a9"><a href="#custom" onclick="myFunction('a9')">Custom</a></div>
+					</div> 	  
+				  </p>
+			    </div>
+
+			    <div id="menu2" class="tab-pane fade">
+			      <h3>Route for Airoli Station</h3>
+			      <p>
+					<div class="scrollmenu">
+					  <div id="b1"><a href="#home" onclick="myFunction('b1')">Home</a></div>
+					  <div id="b2"><a href="#news" onclick="myFunction('b2')">News</a></div>
+					  <div id="b3"><a href="#contact" onclick="myFunction('b3')">Contact</a></div>
+					  <div id="b4"><a href="#about" onclick="myFunction('b4')">About</a></div>
+					  <div id="b5"><a href="#support" onclick="myFunction('b5')">Support</a></div>
+					  <div id="b6"><a href="#blog" onclick="myFunction('b6')">Blog</a></div>
+					  <div id="b7"><a href="#tools" onclick="myFunction('b7')">Tools</a> </div>
+					  <div id="b8"><a href="#bbse" onclick="myFunction('b8')">Base</a></div>
+					  <div id="b9"><a href="#custom" onclick="myFunction('b9')">Custom</a></div>
+					</div> 	  
+				  </p>
+			    </div>
+
+			    <div id="menu3" class="tab-pane fade">
+			      <h3>Route for Powai</h3>
+			      <p>
+					<div class="scrollmenu">
+					  <div id="c1"><a href="#home" onclick="myFunction('c1')">Home</a></div>
+					  <div id="c2"><a href="#news" onclick="myFunction('c2')">News</a></div>
+					  <div id="c3"><a href="#contact" onclick="myFunction('c3')">Contact</a></div>
+					  <div id="c4"><a href="#about" onclick="myFunction('c4')">About</a></div>
+					  <div id="c5"><a href="#support" onclick="myFunction('c5')">Support</a></div>
+					  <div id="c6"><a href="#blog" onclick="myFunction('c6')">Blog</a></div>
+					  <div id="c7"><a href="#tools" onclick="myFunction('c7')">Tools</a> </div>
+					  <div id="c8"><a href="#base" onclick="myFunction('c8')">Base</a></div>
+					  <div id="c9"><a href="#custom" onclick="myFunction('c9')">Custom</a></div>
+					</div> 	  
+				  </p>
+			    </div>
+
+			    	<button type="button" class="btn btn-primary btn-block" onclick="myValue()" id ="voila2">Let'sGo</button>
+			    	
+
+			    
+
+		  	</div> <!--tab-content div -->
+		</div><!--jumbotron div -->
+	</div><!--container-fluid div -->
+	
+	<!--Modal -->
+
+	<div id="id01" class="modal">
+	  
+	  <form class="modal-content animate" action="/action_page.php">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      <b>Welcome to Fumoe</b>
+	    </div>
+
+	    <div class="modal-container">
+	      <label for="uname"><b>Username</b></label>
+	      <input type="text" placeholder="Enter Username" name="uname" required>
+
+	      <label for="psw"><b>Password</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
+	        
+	      <button type="submit">Login</button>
+	      <label>
+	        <input type="checkbox" checked="checked" name="remember"> Remember me
+	      </label>
+	    </div>
+
+	    <div  class="modal-container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      <span class="psw">Forgot <a href="#">password?</a></span>
+	    </div>
+
+	  </form>
+
+    </div>
+
+	<script>
+	var count = 0;
+	var elt1,elt2;
+
+	function to_reset(){
+	count = 0;
+
+	if(elt1){
+		var element1 = document.getElementById(elt1);
+		if(element1.classList.contains('mystyle')){
+			element1.classList.toggle("mystyle");
+		}
+	}
+
+	if(elt2){
+		var element2 = document.getElementById(elt2);
+		if(element2.classList.contains('mystyle')){
+			element2.classList.toggle("mystyle");
+		}
+	}
+	elt1 = undefined;
+	elt2 = undefined;
+
+	}
+
+	function myFunction(x) {
+		
+	   var element = document.getElementById(x);
+	   console.log(count);
+	   if(count < 2 && !element.classList.contains('mystyle')){
+			if(count ==0){
+			elt1 = x;
+			}else{
+			elt2 = x;
+			}
+			count++;
+			element.classList.toggle("mystyle");
+	   }else if(count == 2 && !element.classList.contains('mystyle')){
+			document.getElementById(elt1).classList.toggle('mystyle');
+			elt1 = elt2;
+			elt2 = x;
+			element.classList.toggle("mystyle");
+			// document.getElementById(b1).classList.toggle('mystyle');
+			// console.log(btn); 
+	   }else if(element.classList.contains('mystyle')){
+			if( x == elt1){
+			
+				elt1 = elt2;
+				elt2 = undefined;
+			}else if( x== elt2 ){
+			  elt2 = undefined;
+			
+			}
+			count--;
+			
+			element.classList.toggle("mystyle"); 
+	   }
+
+	   var ab = document.getElementById('voila2');
+	   if(count == 2 && !ab.classList.contains('mytab')){
+
+	   		ab.classList.toggle("mytab");
+
+	   }else if(count == 0 || count == 1 && ab.classList.contains('mytab')){
+	   		ab.classList.toggle("mytab");
+	   }
+
+	}
+
+
+
+	</script>
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+	</script>
+	<script>
+		function myValue(x){
+
+		var dda = document.getElementById('sela1');
+		var ddb = document.getElementById('sela2');
+		var dd = document.getElementById(x);
+
+		if(dda.selectedIndex != 0 && ddb.selectedIndex !=0 && !dd.classList.contains('mytab')){
+
+			// console.log(dd);
+			dd.classList.toggle("mytab");
+
+		}
+		// var selected_option = ddl.options[ddl.selectedIndex].value;
+		// 	if (selected_option == '0'){
+		// 	    console.log(selected_option);
+		// 	}else{
+		// 		console.log(selected_option);
+		// 	};
+		// 	console.log('hello world');
+		 };
+
+	</script> 
+</body>
+</html>
